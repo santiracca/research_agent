@@ -155,21 +155,21 @@ agent = initialize_agent(
 )
 
 
-# def main():
-#     st.set_page_config(page_title="Researcher", page_icon="🔍")
-#     st.header("AI Research agent :bird:")
-#     query = st.text_input("What do you want to research?")
+def main():
+    st.set_page_config(page_title="Researcher", page_icon="🔍")
+    st.header("AI Research agent :bird:")
+    query = st.text_input("What do you want to research?")
 
-#     if query:
-#         st.write("Doing research for ", query)
+    if query:
+        st.write("Doing research for ", query)
 
-#         result = agent({"input": query})
+        result = agent({"input": query})
 
-#         st.info(result["output"])
+        st.info(result["output"])
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 # app = FastAPI()
 
